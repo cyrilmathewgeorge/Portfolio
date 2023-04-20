@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/437f893bca.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#transferable">Transferable Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm<span> Cyril</span><br>Mathew From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="img/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                    Hello there, I'm Cyril Mathew George, originally from Kottayam, Kerala. 
+                    I enjoy playing football, listening to music, and reading books 
+                    in my leisure time.
+                    I completed my Bachelor's Degree in Electrical and Electronics Engineering, 
+                    which gave me a strong foundation in the principles of electricity, electronics, and computing. 
+                    I'm passionate about exploring the intersection of technology and engineering, and 
+                    I aspire to become an IT engineer.
+                    In pursuit of my career goals, I'm committed to continuous learning and 
+                    development, keeping up-to-date with the latest trends in 
+                    IT and expanding my knowledge and skills in programming, networking, and security. 
+                    I believe that with hard work, dedication, and a positive attitude, 
+                    I can achieve great things in my career and make a meaningful impact in the world.
+                 </p>
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('technical')">Technical Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="technical">
+                    <ul>
+                        <li><span>Adobe-AfterEffects</span><br>VFX and Audio Spectrum designing</li>
+                        <li><span>Adobe-Photoshop</span><br>Poster Desiging and Photo Editing</li>
+                        <li><span>Adobe-PreimerPro</span><br>Video Editing</li>
+                        <li><span>Adobe-Audition</span><br>Music Editing</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-Current</span><br>FullStack Trainee at Brototype</li>
+                        <li><span>2018-2022</span><br>B.Tech in Electrical and Electronics Engineering</li>
+                        <li><span>2016-2018</span><br>High School Education, CBSE</li>
+                    </ul>
+                 </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+<!-- ---------------Services-----------  -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-tilte">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I'm a skilled web designer creating visually appealing and functional 
+                websites with a solid understanding of branding, UX, and the latest design trends.
+                Proficient in HTML, CSS, and JavaScript, I develop search engine optimized and 
+                responsive designs that provide a positive user experience and achieve my clients objectives.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>"I am a skilled UI/UX designer.My expertise lies in designing intuitive 
+                    and visually appealing interfaces that enhance the overall user experience
+                    I have a deep understanding of user needs and behavior, which allows me to 
+                    create user-centric designs that meet business goals.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>
+                    Proficient in a range of design tools and programming languages, with a
+                     strong focus on creating user-centered design solutions. Excellent problem-solving 
+                     and communication skills, with a proven ability to work effectively in a team environment.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------Transferable Skills-----------  -->
+<div id="transferable">
+    <div class="container">
+        <h1 class="sub-tilte">Transferable Skills</h1>
+        <div class="services-list">
+            <div>
+                <h2>Adobe PS</h2>
+                <p>I possess strong skills in Adobe Photoshop, including photo retouching, 
+                    image manipulation, color correction, and image compositing. I have 
+                    experience in designing promotional banners, custom graphics, and posters 
+                    using Photoshop. I am proficient in advanced techniques such as layer masking, 
+                    advanced photo retouching, and image compositing using layers and filters.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Adobe AE</h2>
+                <p>I have expertise in Adobe After Effects, including motion graphics, 
+                    visual effects, video compositing, and animation. I have hands-on experience in 
+                    designing and creating motion graphics, visual effects, and animations using After Effects. 
+                    I am skilled in advanced techniques such as keyframing, masking, and working with effects 
+                    and presets. I am also proficient in integrating After Effects with other Adobe Creative 
+                    Cloud software, such as Adobe Premiere Pro, to create seamless video productions.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Adobe Audition</h2>
+                <p>
+                    I possess strong skills in Adobe Audition, including audio editing, mixing, and mastering.
+                    I have hands-on experience in editing and enhancing audio recordings, creating sound effects, 
+                    and mixing audio for various multimedia projects using Adobe Audition. I am proficient in 
+                    advanced techniques such as noise reduction, audio restoration, and audio manipulation. 
+                    I am also skilled in working with audio effects, equalization, and audio synchronization.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!----------Portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work-1.png">
+                <div class="layer">
+                    <h3>iPhone Website</h3>
+                    <p>Created an exact clone website of iPhone with the latest updates.</p>
+                    <a href="https://cyrilmathewgeorge.github.io/apple/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-2.png">
+                <div class="layer">
+                    <h3>Spotify Website</h3>
+                    <p>Designed the first webpage of the famous music app Spotify</p>
+                    <a href="https://cyrilmathewgeorge.github.io/spotify/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-3.png">
+                <div class="layer">
+                    <h3>Jeep Webpage</h3>
+                    <p>Designed the website of the famous car brand Jeep.</p>
+                    <a href="https://cyrilmathewgeorge.github.io/Jeep/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>  
+<!--------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> cyrilsanthu@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>954977198</p>
+                <div class="social-icons">
+                    <a target="_blank"href="https://stackoverflow.com/users/21661209/cyril-mathew"><i class="fa-brands fa-stack-overflow"></i></a>
+                    <a target="_blank" href="https://github.com/cyrilmathewgeorge"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/cyril_mtz_/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/cyril-mathew-george-a731151b7/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="img/Cyril CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright for cyril mathew george</p>
+    </div>
+</div>  
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+   function openmenu(){
+      sidemenu.style.right = "0";
+   }
+   function closemenu(){
+      sidemenu.style.right = "-200px";
+   }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxilX4yNAa9G1EBBVUGdFknEQHuIJ3nONQfSeIpUqlSpPvCq3HnZdD9ga8XTo7u7VuqDg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
